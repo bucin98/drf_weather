@@ -17,7 +17,22 @@ To get your project up and running, follow these steps:
    git clone <repository-url>
    cd <project-folder>
    ```
-2. Change the variables in .env if needed
+2. This project utilizes a `.env` file, which contains sensitive information and settings. Please create a `.env` file in the project's root directory and set the following environment variables:
+
+   1. **`openweather_key`**: OpenWeatherMap API key. This key allows your Django application to fetch weather data from OpenWeatherMap. Ensure you have a valid API key.
+
+   2. **`DEBUG`**: Set the value to `TRUE` to enable Django's debug mode. This mode simplifies development but is not recommended for production environments.
+
+   3. **`POSTGRES_USER`**: The username for the PostgreSQL database.
+
+   4. **`POSTGRES_PASSWORD`**: The password for the PostgreSQL database user.
+
+   5. **`POSTGRES_DB`**: The name of the PostgreSQL database.
+
+   6. **`DJANGO_ALLOWED_HOSTS`**: A list of trusted hosts that are allowed to access your Django application. In development, you can set the value to `127.0.0.1`, but in a production environment, you should set the appropriate hosts.
+
+   7. **`CURRENT_WEATHER_TIME`**: How many minutes the current weather is considered valid. This value can be configured to suit your requirements.
+
 3. Build and start the Docker containers:
     ```bash
     docker-compose up --build
