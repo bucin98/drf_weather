@@ -14,8 +14,8 @@ To get your project up and running, follow these steps:
 1. Clone the repository (if you haven't already):
 
    ```bash
-   git clone <repository-url>
-   cd <project-folder>
+   git clone https://github.com/bucin98/drf_weather
+   cd drf_weather
    ```
 2. This project utilizes a `.env` file, which contains sensitive information and settings. Please create a `.env` file in the project's root directory and set the following environment variables:
 
